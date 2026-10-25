@@ -25,7 +25,6 @@
       align-items: center;
     }
 
-    /* LOGO */
     .logo-container {
       margin-top: 30px;
       display: flex;
@@ -41,18 +40,16 @@
       border: 4px solid #fff;
     }
 
-    /* TITOLO PRINCIPALE */
     .titolo-principale {
       margin-top: 25px;
       font-size: 3rem;
-      font-weight: 900; /* extra bold */
+      font-weight: 900;
       letter-spacing: 3px;
       color: #ffffff;
       text-align: center;
       width: 100%;
     }
 
-    /* SOTTOTITOLO */
     .sottotitolo {
       margin-top: 10px;
       font-size: 1.5rem;
@@ -62,7 +59,6 @@
       width: 100%;
     }
 
-    /* DESCRIZIONE DA FILE */
     .descrizione {
       margin-top: 20px;
       font-size: 1.2rem;
@@ -73,27 +69,6 @@
       width: 100%;
     }
 
-    /* WHATSAPP */
-    .whatsapp-block {
-      margin-top: 35px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .whatsapp-block img {
-      width: 80px;
-    }
-
-    .whatsapp-block a {
-      display: block;
-      margin-top: 10px;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    /* SOCIAL BUTTONS */
     .social-row {
       margin-top: 40px;
       display: flex;
@@ -115,7 +90,6 @@
       transform: scale(1.1);
     }
 
-    /* EMAIL */
     .email-block {
       margin-top: 40px;
       font-size: 1rem;
@@ -129,7 +103,6 @@
       font-weight: 600;
     }
 
-    /* PRESIDENTE */
     .presidente-block {
       margin-top: 45px;
       width: 100%;
@@ -169,27 +142,15 @@
 <body>
   <div class="overlay">
 
-    <!-- LOGO -->
     <div class="logo-container">
       <img src="logo.jpg" alt="Logo Associazione">
     </div>
 
-    <!-- TITOLO GRANDE -->
     <div class="titolo-principale">F.A.T.A.</div>
 
-    <!-- SOTTOTITOLO -->
     <div class="sottotitolo">Famiglie Associate per la Tutela dell’Ascolto</div>
 
-    <!-- DESCRIZIONE DA FILE -->
     <div id="descrizione" class="descrizione"></div>
-
-    <!-- WHATSAPP -->
-    <div class="whatsapp-block">
-      <img src="whatsapp.png" alt="WhatsApp">
-      <a href="https://chat.whatsapp.com/FlbQUYjMrFuIRXIP0mPZmX?s=cl&p=i&mlu=4&ilr=4" target="_blank">
-        Clicca per entrare nel gruppo WhatsApp
-      </a>
-    </div>
 
     <!-- SOCIAL -->
     <div class="social-row">
@@ -202,13 +163,11 @@
       </a>
     </div>
 
-    <!-- EMAIL -->
     <div class="email-block">
-      Per altre informazioni scrivici:  
+      Per altre informazioni scrivici:
       <a href="mailto:fataassociazione@gmail.com">fataassociazione@gmail.com</a>
     </div>
 
-    <!-- PRESIDENTE -->
     <div class="presidente-block">
       <div class="presidente-photo">
         <img src="presidente.jpg" alt="Presidente">
@@ -222,7 +181,6 @@
 
   </div>
 
-  <!-- SCRIPT PER CARICARE descrizione.txt -->
   <script>
     fetch("descrizione.txt")
       .then(response => response.text())
